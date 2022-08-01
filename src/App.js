@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route } from "react-router-dom";
+import BatchProcess from "./pages/BatchProcess";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import "./assets/styles/app.scss";
+import DeliverRequests from "./pages/DeliverRequests";
+import RelocationRequests from "./pages/RelocationRequests";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/home" element={<Home />}>
+          <Route path="batches" element={<BatchProcess />} />
+          <Route path="delivery-request/*" element={<DeliverRequests />} />
+          <Route path="relocation-request/*" element={<RelocationRequests />} />
+        </Route>
+
+        <Route path="/" element={<Login />} />
+      </Routes>
+
+      <ToastContainer />
     </div>
   );
 }

@@ -1,0 +1,26 @@
+#delivery-request{
+
+
+    padding: 30px;
+    .delivery-request-body{
+        margin-top: 30px;
+        .object{
+       
+            padding: 15px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.5px solid rgb(231, 219, 219);
+
+            .key{
+                font-size: 20px;
+                font-weight: 600;
+                
+            }
+            .value{
+                font-weight: 800;
+                font-size: 25px;
+            }
+        }
+    }
+}

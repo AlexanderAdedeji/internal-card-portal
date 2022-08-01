@@ -1,0 +1,28 @@
+#relocation-request{
+
+
+    padding: 30px;
+    .relocation-request-body{
+        margin-top: 30px;
+        .object{
+       
+            padding: 15px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.5px solid rgb(231, 219, 219);
+
+            .lga{
+                font-size: 20px;
+                font-weight: 600;
+                
+            }.location{
+text-align: start;
+            }
+            .request{
+                font-weight: 800;
+                font-size: 25px;
+            }
+        }
+    }
+}

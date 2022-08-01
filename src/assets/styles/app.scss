@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f6f5fa;
+  }
+
+
+
+
+@import './pages/home';
+@import './pages/batch-process';
+@import './pages/relocation-request';
+@import './pages/delivery-request';
+@import './pages/create-order';
+@import './pages/login';
+@import './components/table';
